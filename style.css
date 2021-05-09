@@ -1,0 +1,273 @@
+:root {
+    --tan: #fdc599;
+    --white: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,html {
+    font-family: system-ui;
+    background: #fdc4994f;
+    color: white;
+    text-align: center;
+    width: 100%;
+    min-height: 100%;
+}
+  
+header {
+    position: relative;
+    display:fixed;
+    width: 100%;
+    max-height: 165px;
+    padding-top:10px;
+    margin-top: 5px;
+}
+
+#bgvid {
+    transform: translate(0, -45%);
+    /* position: sticky; */
+    max-height: 200px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+video {
+    position: block;
+    max-width: 100%;
+    max-height: 80%;
+}
+
+/*Header Title Styling*/
+  
+#title{
+    max-width: 515px;
+    position: absolute;
+    top: 40%;
+}
+  
+#title h1{
+    font-size: 50px;
+    text-align: left;
+    margin: 10px;
+}
+  
+#title p{
+    text-align: right;
+}
+  
+/*Header Link Styling*/
+#outsideLinks{
+    text-align: right;
+    text-decoration: underline;
+    font-size: 20px;
+    position: absolute;
+    bottom:0%;
+    right: 0;
+    transform: translate(0, -75%);
+}
+
+.personalLinks, header a {
+    margin: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.personalLinks:hover {
+    background: linear-gradient(0.25turn, var(--tan), transparent);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#linkIcon {
+    display:none;
+    /* background-color:var(--tan);
+    border: 3px solid rgb(223, 133, 69); */
+    /* border-radius: 5px; */
+    text-align: right;
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    bottom:0;
+    right: 0;
+    
+}
+
+#sidebarButton{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    margin: 25%;
+    background-color: var(--tan);
+    border: 3px solid rgb(223, 133, 69);
+    border-radius: 5px;
+    bottom:0;
+    right: 0;
+    transform: translate(0, -30%);
+}
+      
+  
+
+#sidebarLinks {
+    display:none;
+    background-color:darkgray;
+    color: var(--white);
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    bottom:0;
+    right: 0;
+}
+
+#sidebarButton:hover {
+    cursor: pointer;
+    background-color:rgb(248, 224, 206);
+    color:royalblue;
+}
+#sidebarButton:active #sidebarlinks{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#sidebarButton:focus .personalLinks{
+    /* display: block; */
+    border: 2px var(--white) solid;
+    width: 100%;
+    height: 33%;
+    font-size: 14px;
+    padding: 10% 25%;
+}
+
+main{
+
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(71, 62, 49);
+}
+
+main section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+}
+
+
+main h2{
+    margin:0;
+    margin-right: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+}
+
+#mainSideTop div{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    margin:auto;
+    
+
+}
+
+#aboutMe p{
+    font-size:18px;
+}
+
+#aboutMe #profile {
+    border-radius: 150px;
+    border: white 2px solid;
+    width: 260px;
+    height: 340px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#difContacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+#works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+#works img {
+    width: 150px;
+    height:125px;
+    fill-opacity: 5;
+}
+
+works img:hover{
+    opacity:0;
+}
+
+#firstWork img{
+    width: 400px;
+    height: 320px;
+}
+@media screen and (max-width:550px){
+    #bgvid{
+        height: 300;
+        width: 530;
+        box-sizing: content-box;
+    }
+
+    /*at the specified size the links disappear and an icon appears that 
+    when clicked will bring up a box with the links*/
+    #outsideLinks{
+        display:none;
+    }
+    #linkIcon{
+        display:inline-block;
+    }
+
+    /* #sidebarButton:hover {
+        cursor: pointer;
+        background-color:rgb(248, 224, 206);
+        color:royalblue;
+    }
+    #sidebarButton[aria-pressed="true"] .sidebarlinks{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+    }
+    #sidebarButton:active .personalLinks{
+        border: 2px var(--white) solid;
+        width: 100%;
+        height: 33%;
+        font-size: 14px;
+        padding: 10% 25%;
+    } */
+}
+
+@media screen and (max-width: 480){
+    video{
+        min-height: 243px;
+        min-width: 432px;
+    }
+    #bgvd {
+        position: relative;
+        overflow: hidden;
+        min-height: 243px;
+        min-width: 432px;
+    }
+
+    #title {
+        position:absolute;
+        top:0;
+        left:0;
+    }
+}
