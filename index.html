@@ -9,8 +9,8 @@
 <body>
     <header>
         <div id="bgvid">
-            <video poster=https://vod-progressive.akamaized.net/exp=1620250966~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F706%2F9%2F228530158%2F805021644.mp4~hmac=9f937869a7214fad732ffd9cccd52f5515428059a28b350d4d70742d16bd4cc5/vimeo-prod-skyfire-std-us/01/706/9/228530158/805021644.mp4?filename=Feather+-+11168.mp4 id="titleBGvid" playsinline autoplay muted loop>
-                <source src=https://vod-progressive.akamaized.net/exp=1620250966~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F706%2F9%2F228530158%2F805021644.mp4~hmac=9f937869a7214fad732ffd9cccd52f5515428059a28b350d4d70742d16bd4cc5/vimeo-prod-skyfire-std-us/01/706/9/228530158/805021644.mp4?filename=Feather+-+11168.mp4>
+            <video poster="images/Feather - 11168.mp4" id="titleBGvid" playsinline autoplay muted loop>
+                <source src="images/Feather - 11168.mp4">
             </video>
 
             <section id="title">
@@ -19,12 +19,16 @@
             </section>
 
             <section id="linkIcon">
-                <select>Navigation</select>
+                <select>
+                    <option value="navigation">Navigation</option>
+                    <option value="about me"><a href=#aboutMe>About Me</a></option>
+                    <option value="contact"><a href=#contact>Contact Info</a></option>
+                    <option value="works"><a href=#mainSideBottom>My Works</a></option>
+                </select>
                 <div id="sidebarLinks">
                     <a class="personalLinks" href=#aboutMe>About Me</a>
                     <a class="personalLinks" href=#contact>Contact Info</a>
                     <a class="personalLinks" href=#mainSideBottom>My Works</a>
-                    <a class="personalLinks" href="/2021 Resume.pdf" src="blank">GitHub</a>
                 </div>
             </section>
 
@@ -32,7 +36,6 @@
                 <a class="personalLinks" href=#aboutMe>About Me</a>
                 <a class="personalLinks" href=#contact>Contact Info</a>
                 <a class="personalLinks" href=#mainSideBottom>My Works</a>
-                <a class="personalLinks" href="2021 Resume.pdf" target="blank">Resume</a>
             </section>
             
             <!-- <img id="linkIcon" src="sidebar_icon.png" alt="Sidebar Icon"> -->
@@ -60,6 +63,7 @@
                     <a class="contactLinks" href="https://www.linkedin.com/in/celina-lind-b31895171/" target="blank">LinkedIn</a>
                     <p>Email: <a href="mailto: lind.115@buckeyemail.osu.edu" >clind323@gmail.com</a></p>
                     <p>Phone: (614)-633-7126</p>
+                    <a class="contactLinks" href="/2021 Resume.pdf" src="blank">Resume</a>
                 </div>
             </div>
         </section>
@@ -68,7 +72,13 @@
         <section id="mainSideBottom">
             <h2>My Works:</h2>
             <div id="works">
-                <a id="firstWork" href=file:///C:/Users/clind/OneDrive/Desktop/BootCampActivities/CSS_Cheatsheet/index.html" target="blank"><img src="images/CSSCheatSheet.PNG" alt="Css Cheat Sheet Project"><p>CSS CheatSheet</p></a>
+                <!-- <div > -->
+                <a id ="firstWork" href="https://clind3.github.io/CSSCheatsheet/" target="blank"><img src="images/CSSCheatSheet.PNG" alt="Css Cheat Sheet Project"><p>CSS CheatSheet</p></a>
+                <!-- </div> -->
+                <!-- <div> -->
+                <a href="https://clind3.github.io/HoriseonSite/" target="blank"><img src="images/Horiseon.jpg" alt="Horiseon mainpage image"><p>Horiseon Homepage</p></a>
+                    
+                <!-- </div> -->
             </div>
         </section>
     </main>
