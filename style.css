@@ -81,11 +81,9 @@ video {
     border-radius: 5px;
     cursor: pointer;
 }
-/* 
+ 
 #linkIcon {
     display:none;
-    background-color:var(--tan);
-    border: 3px solid rgb(223, 133, 69);
     border-radius: 5px;
     text-align: right;
     position: absolute;
@@ -95,7 +93,7 @@ video {
     right: 0;
     
 }
-
+/*
 #sidebarButton{
     position:absolute;
     width: 100%;
@@ -148,6 +146,7 @@ main{
     display: flex;
     flex-direction: column;
     color: rgb(71, 62, 49);
+    margin-left: 10px;
 }
 
 main section {
@@ -205,10 +204,10 @@ main h2{
 
 #works a{
     width: 30%;
-    height: 25%;
+    height: 50%;
 }
 #works img {
-    width: 100%;
+    width: 80%;
     height:100%;
     min-height: 125px;
     min-width: 180px;
@@ -220,8 +219,8 @@ main h2{
 }
 
 #firstWork img{
-    width: 200px;
-    height: 160px;
+    width: 100%;
+    height: 110%;
 }
 
 
