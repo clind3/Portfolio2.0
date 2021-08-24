@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <title>My Portfolio</title>
     <meta charset="UTF-8" />
@@ -37,31 +38,35 @@
                 <a class="personalLinks" href=#contact>Contact Info</a>
                 <a class="personalLinks" href=#mainSideBottom>My Works</a>
             </section>
-            
+
             <!-- <img id="linkIcon" src="sidebar_icon.png" alt="Sidebar Icon"> -->
         </div>
     </header>
 
     <!-- Main Content Start -->
-    <main>
+    <main style='display: flex; flex-direction: row;'>
         <!-- Top section holds 'About Me' and Cantact Info -->
         <section id="mainSideTop">
             <div id="aboutMe">
                 <h2>About Me</h2>
-                <p>My name is Celina Lind. I am currently a Junior at the Ohio State University working towards my Bachelor's in Computer Science.
-                    I became interested in coding and programming during my year long internship as an Engineering Assistant at an automotive part manufacturing company.
-                    Instantly itrigued by the creativity and logistics behind the screen. My goal is to finish my bootcamp this fall and be able to get my first job as a web developer.
+                <p>My name is Celina Lind. I am currently a Junior at the Ohio State University working towards my
+                    Bachelor's in Computer Science.
+                    I became interested in coding and programming during my year long internship as an Engineering
+                    Assistant at an automotive part manufacturing company.
+                    Instantly itrigued by the creativity and logistics behind the screen. My goal is to finish my
+                    bootcamp this fall and be able to get my first job as a web developer.
                 </p>
-                <div id="profile">
+                <!-- <div id="profile">
                     <img src="images/CelinaLind.jpg" alt="Picture of Celina Lind">
-                </div>
+                </div> -->
             </div>
             <div id="contact">
                 <h2>Contact Me</h2>
                 <div id="difContacts">
-                    <a class="contactLinks" href= "https://github.com/clind3" target="blank">GitHub</a>
-                    <a class="contactLinks" href="https://www.linkedin.com/in/celina-lind-b31895171/" target="blank">LinkedIn</a>
-                    <p>Email: <a href="mailto: lind.115@buckeyemail.osu.edu" >clind323@gmail.com</a></p>
+                    <a class="contactLinks" href="https://github.com/clind3" target="blank">GitHub</a>
+                    <a class="contactLinks" href="https://www.linkedin.com/in/celina-lind-b31895171/"
+                        target="blank">LinkedIn</a>
+                    <p>Email: <a href="mailto: lind.115@buckeyemail.osu.edu">clind323@gmail.com</a></p>
                     <p>Phone: (614)-633-7126</p>
                     <a class="contactLinks" href="/2021 Resume.pdf" src="blank">Resume</a>
                 </div>
@@ -69,17 +74,36 @@
         </section>
 
         <!-- Bottom section holds projects/my works -->
-        <section id="mainSideBottom">
+        <section id="mainSideBottom" style="align-content: center;">
             <h2>My Works:</h2>
             <div id="works">
-                <!-- <div > -->
-                <a id ="firstWork" href="https://clind3.github.io/CSSCheatsheet/" target="blank"><img src="images/CSSCheatSheet.PNG" alt="Css Cheat Sheet Project"><p>CSS CheatSheet</p></a>
-                <!-- </div> -->
-                <!-- <div> -->
-                <a href="https://clind3.github.io/HoriseonSite/" target="blank"><img src="images/Horiseon.jpg" alt="Horiseon mainpage image"><p>Horiseon Homepage</p></a>
-                    
-                <!-- </div> -->
-                <a href="https://clind3.github.io/Project-1-Website/" target="blank"><img src="images/GoodEatsSite.PNG" alt="GoodEats mainpage image"><p>GoodEats Homepage</p></a>
+                <div style="margin-bottom: 0px; padding-bottom: 0px;">
+                    <a href="https://whats-going-on-nightout.herokuapp.com/" target="blank"><img style="padding-bottom: 0px ;"
+                            src="images/WhatsGoingOnSite.PNG" alt="WhatsGoingOnSite mainpage image">
+                    </a>
+                    <p>What's Going On?</p>
+                </div>
+                <div>
+                    <a href="https://clind3.github.io/GoodEats/" target="blank"><img
+                            src="images/GoodEatsSite.PNG" alt="GoodEats mainpage image">
+                        
+                    </a><p>GoodEats Homepage</p>
+                </div>
+            
+                <div>
+                    <a id="firstWork" href="https://clind3.github.io/CSSCheatsheet/" target="blank"><img
+                            src="images/CSSCheatSheet.PNG" alt="Css Cheat Sheet Project">
+                        
+                    </a><p>CSS CheatSheet</p>
+                </div>
+                <div>
+                    <a href="https://clind3.github.io/HoriseonSite/" target="blank"><img src="images/Horiseon.jpg"
+                            alt="Horiseon mainpage image">
+                        
+                    </a><p>Horiseon Homepage</p>
+
+                </div>
+                
             </div>
         </section>
     </main>
