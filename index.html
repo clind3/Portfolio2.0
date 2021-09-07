@@ -7,12 +7,14 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
+<video poster="images/Feather - 11168.mp4" id="titleBGvid" playsinline autoplay muted loop>
+    <source src="images/Feather - 11168.mp4">
+</video>
+
 <body>
+
     <header>
-        <div id="bgvid">
-            <video poster="images/Feather - 11168.mp4" id="titleBGvid" playsinline autoplay muted loop>
-                <source src="images/Feather - 11168.mp4">
-            </video>
+        <div id="headerItems">
 
             <section id="title">
                 <h1>My Portfolio</h1>
@@ -20,12 +22,12 @@
             </section>
 
             <section id="linkIcon">
-                <select>
+                <!-- <select>
                     <option value="navigation">Navigation</option>
                     <option value="about me"><a href=#aboutMe>About Me</a></option>
                     <option value="contact"><a href=#contact>Contact Info</a></option>
                     <option value=#mainSideBottom><a href=#mainSideBottom>My Works</a></option>
-                </select>
+                </select> -->
                 <!-- <div id="sidebarLinks">
                     <a class="personalLinks" href=#aboutMe>About Me</a>
                     <a class="personalLinks" href=#contact>Contact Info</a>
@@ -37,14 +39,16 @@
                 <a class="personalLinks" href=#aboutMe>About Me</a>
                 <a class="personalLinks" href=#contact>Contact Info</a>
                 <a class="personalLinks" href=#mainSideBottom>My Works</a>
+                <a class="personalLinks" href="/2021 Resume.pdf" src="blank">Resume</a>
             </section>
 
-            <!-- <img id="linkIcon" src="sidebar_icon.png" alt="Sidebar Icon"> -->
+
         </div>
     </header>
 
     <!-- Main Content Start -->
-    <main style='display: flex; flex-direction: row;'>
+    <main
+        style='display: flex; flex-direction: column; background-color:#fdc4999f; min-height: 100%; align-content: center;'>
         <!-- Top section holds 'About Me' and Cantact Info -->
         <section id="mainSideTop">
             <div id="aboutMe">
@@ -53,59 +57,72 @@
                     Bachelor's in Computer Science.
                     I became interested in coding and programming during my year long internship as an Engineering
                     Assistant at an automotive part manufacturing company.
-                    Instantly itrigued by the creativity and logistics behind the screen. My goal is to finish my
-                    bootcamp this fall and be able to get my first job as a web developer.
+                    Instantly intrigued by the creativity and logistics behind the screen. My goal is to finish my
+                    bootcamp this fall and to continue to grow as a Full Stack Developer.
                 </p>
                 <!-- <div id="profile">
                     <img src="images/CelinaLind.jpg" alt="Picture of Celina Lind">
                 </div> -->
-            </div>
-            <div id="contact">
-                <h2>Contact Me</h2>
-                <div id="difContacts">
-                    <a class="contactLinks" href="https://github.com/clind3" target="blank">GitHub</a>
-                    <a class="contactLinks" href="https://www.linkedin.com/in/celina-lind-b31895171/"
-                        target="blank">LinkedIn</a>
-                    <p>Email: <a href="mailto: lind.115@buckeyemail.osu.edu">clind323@gmail.com</a></p>
-                    <p>Phone: (614)-633-7126</p>
-                    <a class="contactLinks" href="/2021 Resume.pdf" src="blank">Resume</a>
-                </div>
             </div>
         </section>
 
         <!-- Bottom section holds projects/my works -->
         <section id="mainSideBottom" style="align-content: center;">
             <h2>My Works:</h2>
+            <p style="font-weight: 800;">NOTE: To view repo select <img src="./images/Octocat.png" alt="github repo btn" style="height: 40px; width: max-content;"/> next to project name.</p>
             <div id="works">
                 <div style="margin-bottom: 0px; padding-bottom: 0px;">
-                    <a href="https://whats-going-on-nightout.herokuapp.com/" target="blank"><img style="padding-bottom: 0px ;"
-                            src="images/WhatsGoingOnSite.PNG" alt="WhatsGoingOnSite mainpage image">
+                    <a href="https://whats-going-on-nightout.herokuapp.com/" target="blank"><img class='projectImage'
+                            src="images/WhatsGoingOnSite.PNG"
+                            alt="WhatsGoingOnSite mainpage image">
                     </a>
-                    <p>What's Going On?</p>
-                </div>
-                <div>
-                    <a href="https://clind3.github.io/GoodEats/" target="blank"><img
-                            src="images/GoodEatsSite.PNG" alt="GoodEats mainpage image">
-                        
-                    </a><p>GoodEats Homepage</p>
-                </div>
-            
-                <div>
-                    <a id="firstWork" href="https://clind3.github.io/CSSCheatsheet/" target="blank"><img
-                            src="images/CSSCheatSheet.PNG" alt="Css Cheat Sheet Project">
-                        
-                    </a><p>CSS CheatSheet</p>
-                </div>
-                <div>
-                    <a href="https://clind3.github.io/HoriseonSite/" target="blank"><img src="images/Horiseon.jpg"
-                            alt="Horiseon mainpage image">
-                        
-                    </a><p>Horiseon Homepage</p>
+                    <div>
+                        <p>What's Going On? <a href="https://github.com/clind3/whats_going_on" target="blank"><img src="./images/Octocat.png" alt="github repo btn" style="height: 40px; width: max-content;"/></a></p>
+                       
+                    </div>
 
                 </div>
-                
+                <div>
+                    <a href="https://clind3.github.io/GoodEats/" target="blank"><img class='projectImage' src="images/GoodEatsSite.PNG"
+                            alt="GoodEats mainpage image">
+
+                    </a>
+                    <p>GoodEats Homepage <a href="https://github.com/clind3/whats_going_on" target="blank"><img src="./images/Octocat.png" alt="github repo btn" style="height: 40px; width: max-content;"/></a></p>
+                </div>
+
+                <div>
+                    <a id="firstWork" href="https://clind3.github.io/CSSCheatsheet/" target="blank"><img class='projectImage'
+                            src="images/CSSCheatSheet.PNG" alt="Css Cheat Sheet Project">
+
+                    </a>
+                    <p>CSS CheatSheet <a href="https://github.com/clind3/whats_going_on" target="blank"><img src="./images/Octocat.png" alt="github repo btn" style="height: 40px; width: max-content;"/></a></p>
+                </div>
+                <div>
+                    <a href="https://clind3.github.io/HoriseonSite/" target="blank"><img class='projectImage' src="images/Horiseon.jpg"
+                            alt="Horiseon mainpage image">
+
+                    </a>
+                    <p>Horiseon Homepage <a href="https://github.com/clind3/whats_going_on" target="blank"><img src="./images/Octocat.png" alt="github repo btn" style="height: 40px; width: max-content;"/></a></p>
+
+                </div>
+
             </div>
         </section>
+        <div id="contact" style='display:flex; align-content: center; flex-direction: column;'>
+            <h2>Contact Me</h2>
+            <div id="difContacts">
+                <a class="contactLinks" href="https://github.com/clind3" target="blank"><img
+                        src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"
+                        alt="github link button"></a>
+                <a class="contactLinks" href="https://www.linkedin.com/in/celina-lind-b31895171/"
+                    target="blank"><img
+                        src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"
+                        alt="linkedin link icon"></a>
+                <a href="mailto: clind323@gmail.com"><img
+                        src='https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white'
+                        alt="gmail icon link button" /> </a>
+             </div>
+        </div>
     </main>
     <!-- Main Content End -->
 </body>

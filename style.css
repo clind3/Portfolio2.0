@@ -9,7 +9,6 @@
 
 html {
     font-family: system-ui;
-    background: #fdc4994f;
     color: white;
     text-align: center;
     width: 100%;
@@ -17,32 +16,40 @@ html {
 }
   
 header {
-    position: relative;
+    background-image: linear-gradient(#b68866d3,rgb(114, 81, 55)) ;
+    position: fixed;
     width: 100%;
     max-height: 165px;
-    padding-top:10px;
-    margin-top: 5px;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
-#bgvid {
-    transform: translate(0, -45%);
-    /* position: sticky; */
-    max-height: 200px;
-    margin-top: 10px;
+#headerItems {
+    /* transform: translate(0, -45%); */
+    position: relative;
+    top: 0;
+    min-height: 400px;
     overflow: hidden;
 }
 
 video {
-    position: block;
-    max-width: 100%;
-    max-height: 80%;
+    object-fit: fill;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top:0;
+    z-index: -1;
 }
 
 /*Header Title Styling*/
   
 #title{
     max-width: 515px;
-    position: absolute;
+    /* position: absolute; */
     top: 40%;
 }
   
@@ -61,7 +68,7 @@ video {
     text-align: right;
     text-decoration: underline;
     font-size: 20px;
-    position: absolute;
+    /* position: absolute; */
     bottom:0%;
     right: 0;
     transform: translate(0, -75%);
@@ -92,8 +99,8 @@ video {
     right: 0;
     
 }
-/*
-#sidebarButton{
+
+/* #sidebarButton{
     position:absolute;
     width: 100%;
     height: 100%;
@@ -128,8 +135,8 @@ video {
     display: flex;
     flex-direction: column;
     text-align: center;
-} */
-/* #sidebarButton:focus .personalLinks{
+}
+ #sidebarButton:focus .personalLinks{
     display: block;
     border: 2px var(--white) solid;
     width: 100%;
@@ -139,11 +146,12 @@ video {
 } */
 
 main{
-
-    width: 100%;
-    height: 800px;
+    margin: auto;
+    margin-top: 165px;
+    width: 75%;
+    min-height:100%;
     color: rgb(71, 62, 49);
-    margin-left: 10px;
+
 }
 
 main section {
@@ -157,15 +165,13 @@ main section {
 
 main h2{
     margin:0;
-    margin-right: 40px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: underline;
 }
 
 #mainSideTop div{
-    width: 100%;
+    width: 85%;
     height: 100%;
-    text-align: left;
     margin:auto;
 }
 
@@ -184,15 +190,15 @@ main h2{
 
 #difContacts {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
     font-size: 23px;
     font-weight: bolder;
-    padding-bottom: 20%;
 }
 
 #works {
+    font-size: x-large;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -201,16 +207,16 @@ main h2{
     padding:0px;
 }
 
-#works img {
+#works .projectImage {
     margin-top: 15px;
     width: 70%;
     height:70%;
     min-height: 125px;
     min-width: 180px;
-    filter: brightness(200%) blur(1px);
+    filter: brightness(110%) blur(1px);
 }
 
-#works img:hover{
+#works .projectImage:hover{
     filter: brightness(120%);
 }
 
@@ -223,14 +229,15 @@ main h2{
 
     /*at the specified size the links disappear and an icon appears that 
     when clicked will bring up a box with the links*/
-    #outsideLinks{
+    /* #outsideLinks{
         display:none;
     }
     #linkIcon{
-        display:inline-block;
-    }
+        display:inline;
+        position: absolute;
+    } */
 
-    /* #sidebarButton:hover {
+    #sidebarButton:hover {
         cursor: pointer;
         background-color:rgb(248, 224, 206);
         color:royalblue;
@@ -247,14 +254,11 @@ main h2{
         height: 33%;
         font-size: 14px;
         padding: 10% 25%;
-    } */
+    }
 }
 
 @media screen and (max-width: 480){
-    video{
-        min-height: 243px;
-        min-width: 432px;
-    }
+  
     #bgvd {
         position: relative;
         overflow: hidden;
